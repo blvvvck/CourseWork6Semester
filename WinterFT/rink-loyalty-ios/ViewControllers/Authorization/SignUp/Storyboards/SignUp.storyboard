@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qpx-zb-UO0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Создать аккаунт-->
+        <scene sceneID="wMn-SL-IUX">
+            <objects>
+                <viewController title="Создать аккаунт" extendedLayoutIncludesOpaqueBars="YES" id="Qpx-zb-UO0" customClass="CreateAccountViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dpn-fj-RCp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-8g-eT4" userLabel="Top Spacer View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="134.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Логин" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtL-Wd-1K9" customClass="YoshikoTextField" customModule="rink_loyalty_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="178.5" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5ia-Kr-fcg"/>
+                                </constraints>
+                                <color key="textColor" red="0.090196078430000007" green="0.64705882349999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onTextFieldChanged:" destination="Qpx-zb-UO0" eventType="editingChanged" id="hEp-ij-nno"/>
+                                    <outlet property="delegate" destination="Qpx-zb-UO0" id="9Pc-TG-BZB"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9s-dR-1uv" userLabel="Separator View">
+                                <rect key="frame" x="20" y="262.5" width="374" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WQO-qt-n7h"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуйста, введите ваше имя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-QZ-pWi">
+                                <rect key="frame" x="20" y="275.5" width="374" height="14"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUo-Zw-0EB" customClass="PrimaryButton" customModule="rink_loyalty_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="804" width="374" height="48"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="1zT-n4-7nS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <state key="normal" title="Далее"/>
+                                <connections>
+                                    <action selector="onNextButtonTouchUpInside:" destination="Qpx-zb-UO0" eventType="touchUpInside" id="AZm-eI-TkT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-uP-5yl" userLabel="Bottom Spacer View">
+                                <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Vmv-Yx-0IO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rtL-Wd-1K9" firstAttribute="leading" secondItem="05C-cu-5rR" secondAttribute="leading" constant="20" id="38u-T5-JwN"/>
+                            <constraint firstItem="rd8-uP-5yl" firstAttribute="top" secondItem="WUo-Zw-0EB" secondAttribute="bottom" constant="10" id="5fj-C2-HXN"/>
+                            <constraint firstItem="FHb-8g-eT4" firstAttribute="leading" secondItem="Dpn-fj-RCp" secondAttribute="leading" id="93B-GR-MB9"/>
+                            <constraint firstItem="WUo-Zw-0EB" firstAttribute="leading" secondItem="05C-cu-5rR" secondAttribute="leading" constant="20" id="ADX-1I-JQc"/>
+                            <constraint firstItem="FHb-8g-eT4" firstAttribute="top" secondItem="05C-cu-5rR" secondAttribute="top" id="AFD-zn-fTA"/>
+                            <constraint firstItem="FHb-8g-eT4" firstAttribute="trailing" secondItem="Dpn-fj-RCp" secondAttribute="trailing" id="AmE-xv-T5R"/>
+                            <constraint firstItem="WUo-Zw-0EB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tpg-QZ-pWi" secondAttribute="bottom" constant="22" id="C8g-9v-BiQ"/>
+                            <constraint firstItem="A9s-dR-1uv" firstAttribute="leading" secondItem="rtL-Wd-1K9" secondAttribute="leading" id="GPN-9S-FLs"/>
+                            <constraint firstItem="05C-cu-5rR" firstAttribute="trailing" secondItem="rtL-Wd-1K9" secondAttribute="trailing" constant="20" id="JkF-Ue-egW"/>
+                            <constraint firstItem="05C-cu-5rR" firstAttribute="trailing" secondItem="WUo-Zw-0EB" secondAttribute="trailing" constant="20" id="Jlb-eB-Ln0"/>
+                            <constraint firstItem="05C-cu-5rR" firstAttribute="bottom" secondItem="rd8-uP-5yl" secondAttribute="bottom" id="UJK-ei-6H9"/>
+                            <constraint firstItem="05C-cu-5rR" firstAttribute="trailing" secondItem="tpg-QZ-pWi" secondAttribute="trailing" constant="20" id="Ve9-yf-t56"/>
+                            <constraint firstItem="tpg-QZ-pWi" firstAttribute="leading" secondItem="05C-cu-5rR" secondAttribute="leading" constant="20" id="XQ7-KB-d9E"/>
+                            <constraint firstItem="rtL-Wd-1K9" firstAttribute="top" secondItem="FHb-8g-eT4" secondAttribute="bottom" id="adx-7P-fsd"/>
+                            <constraint firstItem="A9s-dR-1uv" firstAttribute="top" secondItem="rtL-Wd-1K9" secondAttribute="bottom" constant="4" id="br0-d9-mlK"/>
+                            <constraint firstItem="tpg-QZ-pWi" firstAttribute="top" secondItem="A9s-dR-1uv" secondAttribute="bottom" constant="12" id="ke7-xy-uW7"/>
+                            <constraint firstAttribute="trailing" secondItem="rd8-uP-5yl" secondAttribute="trailing" id="mBZ-70-PIz"/>
+                            <constraint firstItem="FHb-8g-eT4" firstAttribute="height" secondItem="Dpn-fj-RCp" secondAttribute="height" multiplier="100:667" priority="250" id="mb1-6D-1cS"/>
+                            <constraint firstItem="A9s-dR-1uv" firstAttribute="trailing" secondItem="rtL-Wd-1K9" secondAttribute="trailing" id="oii-vK-UMl"/>
+                            <constraint firstItem="rd8-uP-5yl" firstAttribute="leading" secondItem="Dpn-fj-RCp" secondAttribute="leading" id="y84-40-Y0i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="05C-cu-5rR"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSpacerViewHeightConstraint" destination="Vmv-Yx-0IO" id="da5-nR-f2g"/>
+                        <outlet property="firstNameTextField" destination="rtL-Wd-1K9" id="tE4-qL-Jnw"/>
+                        <outlet property="nextButton" destination="WUo-Zw-0EB" id="NGH-Qf-qMG"/>
+                        <segue destination="tzf-iJ-fdc" kind="show" identifier="EnterPhoneNumber" id="SFr-as-7Cc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYX-RT-aA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="-400"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="eJf-cM-dmM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="EnterPhoneNumber" storyboardName="SignIn" id="tzf-iJ-fdc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2J-LC-xYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="-400"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1020"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "21DB300E19DD2289003A418D"
+               BuildableName = "rink-loyalty-ios.app"
+               BlueprintName = "rink-loyalty-ios"
+               ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "212D018A1BB1986B00B34340"
+               BuildableName = "rink-loyalty-iosTests.xctest"
+               BlueprintName = "rink-loyalty-iosTests"
+               ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1710DE5B1C453AF700912C5B"
+               BuildableName = "rink-loyalty-iosUITests.xctest"
+               BlueprintName = "rink-loyalty-iosUITests"
+               ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Winter Fairy Tale"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      shouldUseLaunchSchemeArgsEnv = "NO">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "21DB300E19DD2289003A418D"
+            BuildableName = "rink-loyalty-ios.app"
+            BlueprintName = "rink-loyalty-ios"
+            ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "Testing"
+            value = "Unit"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Winter Fairy Tale"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "21DB300E19DD2289003A418D"
+            BuildableName = "rink-loyalty-ios.app"
+            BlueprintName = "rink-loyalty-ios"
+            ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
+      </AdditionalOptions>
+      <LocationScenarioReference
+         identifier = "../rink-loyalty-ios/Resources/Locations/RinkLocation.gpx"
+         referenceType = "0">
+      </LocationScenarioReference>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Winter Fairy Tale"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "21DB300E19DD2289003A418D"
+            BuildableName = "rink-loyalty-ios.app"
+            BlueprintName = "rink-loyalty-ios"
+            ReferencedContainer = "container:rink-loyalty-ios.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Winter Fairy Tale">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Winter Fairy Tale"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

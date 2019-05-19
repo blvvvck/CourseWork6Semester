@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Unsupported View Controller-->
+        <scene sceneID="XSh-lJ-h37">
+            <objects>
+                <viewController storyboardIdentifier="LocationUnsupportedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U3c-68-aQj" customClass="LocationUnsupportedViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fvY-nl-jeC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE1-wj-EQi">
+                                <rect key="frame" x="16" y="593" width="343" height="58"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.6470588235294118" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="ePo-cP-kMS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fs_cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButtonTouchUpInside:" destination="U3c-68-aQj" eventType="touchUpInside" id="YMp-Ck-scd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Геолокация " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaD-Rg-UIe">
+                                <rect key="frame" x="16" y="266" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам необходимо находиться на катке &quot;Зимняя Сказка&quot;, чтобы начать кататься." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9A-TS-F21">
+                                <rect key="frame" x="16" y="311" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IceRinkMap" translatesAutoresizingMaskIntoConstraints="NO" id="jM2-4y-BnD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="YWj-U2-WuE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PE1-wj-EQi" firstAttribute="leading" secondItem="Yhm-rR-nbq" secondAttribute="leading" constant="16" id="6Ld-3w-QAl"/>
+                            <constraint firstItem="Yhm-rR-nbq" firstAttribute="bottom" secondItem="PE1-wj-EQi" secondAttribute="bottom" constant="16" id="9e7-Gm-FRM"/>
+                            <constraint firstItem="jM2-4y-BnD" firstAttribute="leading" secondItem="Yhm-rR-nbq" secondAttribute="leading" id="DJq-Jt-Ycf"/>
+                            <constraint firstItem="Yhm-rR-nbq" firstAttribute="trailing" secondItem="PE1-wj-EQi" secondAttribute="trailing" constant="16" id="Gvv-hY-92q"/>
+                            <constraint firstItem="c9A-TS-F21" firstAttribute="leading" secondItem="Yhm-rR-nbq" secondAttribute="leading" constant="16" id="JYr-5B-yTU"/>
+                            <constraint firstItem="xaD-Rg-UIe" firstAttribute="leading" secondItem="Yhm-rR-nbq" secondAttribute="leading" constant="16" id="Lsd-HV-Ybp"/>
+                            <constraint firstItem="Yhm-rR-nbq" firstAttribute="trailing" secondItem="c9A-TS-F21" secondAttribute="trailing" constant="16" id="SxA-B3-11k"/>
+                            <constraint firstItem="Yhm-rR-nbq" firstAttribute="trailing" secondItem="jM2-4y-BnD" secondAttribute="trailing" id="Wi0-ML-MgF"/>
+                            <constraint firstItem="Yhm-rR-nbq" firstAttribute="trailing" secondItem="xaD-Rg-UIe" secondAttribute="trailing" constant="16" id="je4-dh-WTc"/>
+                            <constraint firstItem="xaD-Rg-UIe" firstAttribute="top" secondItem="jM2-4y-BnD" secondAttribute="bottom" constant="16" id="lG1-Ou-wcX"/>
+                            <constraint firstItem="c9A-TS-F21" firstAttribute="top" secondItem="xaD-Rg-UIe" secondAttribute="bottom" constant="16" id="qhL-1M-19w"/>
+                            <constraint firstItem="jM2-4y-BnD" firstAttribute="top" secondItem="fvY-nl-jeC" secondAttribute="top" id="z2g-k2-7Al"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yhm-rR-nbq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovu-3D-njT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="160.56971514242881"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="7W6-At-r0C">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="deS-dJ-2Bw" customClass="WelcomeViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="IntroViewController" id="Itq-vP-cHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-U5-rU6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="y3W-uU-oqz">
+                                <rect key="frame" x="100" y="589" width="175" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.24635142087936401" green="0.55269712209701538" blue="0.78294610977172852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tJ9-Yg-5dL">
+                                <rect key="frame" x="0.0" y="84" width="375" height="464"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kpw-gs-f7S">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tJ9-Yg-5dL" firstAttribute="leading" secondItem="d9f-rK-UrT" secondAttribute="leading" id="O8u-Hs-YJl"/>
+                            <constraint firstItem="y3W-uU-oqz" firstAttribute="leading" secondItem="d9f-rK-UrT" secondAttribute="leading" constant="100" id="Owv-yC-JvO"/>
+                            <constraint firstItem="PuI-U5-rU6" firstAttribute="leading" secondItem="d9f-rK-UrT" secondAttribute="leading" id="UAR-Xg-tpI"/>
+                            <constraint firstItem="d9f-rK-UrT" firstAttribute="trailing" secondItem="y3W-uU-oqz" secondAttribute="trailing" constant="100" id="Uhr-7K-09A"/>
+                            <constraint firstItem="tJ9-Yg-5dL" firstAttribute="top" secondItem="d9f-rK-UrT" secondAttribute="top" constant="64" id="W7x-L4-OFs"/>
+                            <constraint firstItem="d9f-rK-UrT" firstAttribute="bottom" secondItem="y3W-uU-oqz" secondAttribute="bottom" constant="41" id="Wcu-wh-78Q"/>
+                            <constraint firstItem="PuI-U5-rU6" firstAttribute="top" secondItem="Itq-vP-cHg" secondAttribute="top" id="eym-3z-aqh"/>
+                            <constraint firstItem="d9f-rK-UrT" firstAttribute="trailing" secondItem="PuI-U5-rU6" secondAttribute="trailing" id="g0m-GL-ZKa"/>
+                            <constraint firstItem="d9f-rK-UrT" firstAttribute="trailing" secondItem="tJ9-Yg-5dL" secondAttribute="trailing" id="iXC-w3-MnT"/>
+                            <constraint firstItem="PuI-U5-rU6" firstAttribute="bottom" secondItem="Itq-vP-cHg" secondAttribute="bottom" id="lP5-XH-Q2G"/>
+                            <constraint firstItem="y3W-uU-oqz" firstAttribute="top" secondItem="tJ9-Yg-5dL" secondAttribute="bottom" constant="41" id="tqM-G9-kuM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d9f-rK-UrT"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tJ9-Yg-5dL" id="tCE-20-1vS"/>
+                        <outlet property="pageControl" destination="y3W-uU-oqz" id="RWb-iB-Cce"/>
+                        <outlet property="welcomeBackgroungImageView" destination="PuI-U5-rU6" id="XaT-V5-bcC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uc-we-bpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IceRinkMap" width="1125" height="672"/>
+        <image name="OnboardingBackground" width="1125" height="2001"/>
+    </resources>
+</document>

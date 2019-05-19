@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L9u-FZ-kku">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trip List View Controller-->
+        <scene sceneID="lCP-mr-DzM">
+            <objects>
+                <viewController storyboardIdentifier="TripListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L9u-FZ-kku" customClass="TripListViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8h4-nr-21l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tS2-fW-0wt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnx-x1-3g6">
+                                <rect key="frame" x="16" y="593" width="343" height="58"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.64705882349999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Hp7-WU-8iy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Кататься еще">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fs_cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="newTripButtonTouchUpInside:" destination="L9u-FZ-kku" eventType="touchUpInside" id="2Vn-D7-APT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qnx-x1-3g6" firstAttribute="leading" secondItem="ipf-ea-P8D" secondAttribute="leading" constant="16" id="4B8-2v-97e"/>
+                            <constraint firstItem="tS2-fW-0wt" firstAttribute="leading" secondItem="ipf-ea-P8D" secondAttribute="leading" id="Ti5-NP-2bh"/>
+                            <constraint firstItem="ipf-ea-P8D" firstAttribute="trailing" secondItem="Qnx-x1-3g6" secondAttribute="trailing" constant="16" id="Zqd-yN-DNb"/>
+                            <constraint firstItem="ipf-ea-P8D" firstAttribute="trailing" secondItem="tS2-fW-0wt" secondAttribute="trailing" id="dlM-Y3-8Kg"/>
+                            <constraint firstItem="tS2-fW-0wt" firstAttribute="top" secondItem="ipf-ea-P8D" secondAttribute="top" id="pwz-fu-pU4"/>
+                            <constraint firstAttribute="bottom" secondItem="Qnx-x1-3g6" secondAttribute="bottom" constant="16" id="qs2-zS-owd"/>
+                            <constraint firstItem="Qnx-x1-3g6" firstAttribute="top" secondItem="tS2-fW-0wt" secondAttribute="bottom" id="wXw-G7-g29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ipf-ea-P8D"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="tS2-fW-0wt" id="E72-dB-eNB"/>
+                        <segue destination="rPc-DD-dN3" kind="show" identifier="ShowEndTrip" id="tg0-FH-Euk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVN-DK-tOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7335.1999999999998" y="160.56971514242881"/>
+        </scene>
+        <!--EndTrip-->
+        <scene sceneID="YAN-fj-NHd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EndTrip" id="rPc-DD-dN3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqm-cE-4SD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7978" y="160"/>
+        </scene>
+    </scenes>
+</document>

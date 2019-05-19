@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Charts (3.3):
+    - Charts/Core (= 3.3)
+  - Charts/Core (3.3)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - SHSPhoneComponentSwift (0.98)
+  - SwiftLint (0.31.0)
+  - SwiftPhoneNumberFormatter (1.5)
+  - VK-ios-sdk (1.4.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Charts
+  - Crashlytics
+  - Fabric
+  - MagicalRecord
+  - Moya (~> 12.0)
+  - SHSPhoneComponentSwift
+  - SwiftLint
+  - SwiftPhoneNumberFormatter
+  - VK-ios-sdk
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - Crashlytics
+    - Fabric
+    - MagicalRecord
+    - Moya
+    - Result
+    - SHSPhoneComponentSwift
+    - SwiftLint
+    - SwiftPhoneNumberFormatter
+    - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: a5609adcbd70a0f7e15c6984d7e9b5ceecf3b71d
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SHSPhoneComponentSwift: 16503214b5fb737b15423202b8208c73df9021f4
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftPhoneNumberFormatter: 0cc91f4daa06dd606a9defb21048a75c36a771a2
+  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
+
+PODFILE CHECKSUM: 2b6fdc346fb997f08d837318663fae258167efae
+
+COCOAPODS: 1.6.1

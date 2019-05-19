@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="mapstogpx.com" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+    <metadata>
+        <link href="http://www.mapstogpx.com">
+            <text>Sverrir Sigmundarson</text>
+        </link>
+        <!--desc>Map data ©2019 Google</desc-->
+        <!--copyright author="Google Inc">
+         <year>2019</year>
+         <license>https://developers.google.com/maps/terms</license>
+         </copyright-->
+        <!--url>https://www.google.co.uk/maps/dir/55.8033017,49.115034/55.8037432,49.1169203/55.8027418,49.1127917/55.802519,49.1104624/55.8026637,49.1082738/55.8024587,49.1055487/@55.8028627,49.1047332,16z/data=!4m2!4m1!3e2?hl=ru&authuser=0&hl=en</url-->
+        <time>2019-04-27T10:43:27Z</time>
+    </metadata>
+    <wpt lat="55.8033017" lon="49.115034">
+        <name>Kazan</name>
+        <desc>Ulitsa Fedoseyevskaya, 37, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:20:25Z</time>
+    </wpt>
+    <wpt lat="55.8037432" lon="49.1169203">
+        <name>Kazan</name>
+        <desc>Ulitsa Fedoseyevskaya, 37, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:20:37Z</time>
+    </wpt>
+    <wpt lat="55.8027418" lon="49.1127917">
+        <name>Kazan</name>
+        <desc>Ulitsa Fedoseyevskaya, 3, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:20:39Z</time>
+    </wpt>
+    <wpt lat="55.802519" lon="49.1104624">
+        <name>Kazan</name>
+        <desc>Unnamed Road, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:21:14Z</time>
+    </wpt>
+    <wpt lat="55.8026637" lon="49.1082738">
+        <name>Kazan</name>
+        <desc>Ulitsa Baturina, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:21:22Z</time>
+    </wpt>
+    <wpt lat="55.8024587" lon="49.1055487">
+        <name>Kazan</name>
+        <desc>Kremlevskaya Naberezhnaya, Kazan, Respublika Tatarstan, Russia, 420111</desc>
+        <time>2017-05-18T12:21:27Z</time>
+    </wpt>
+</gpx>

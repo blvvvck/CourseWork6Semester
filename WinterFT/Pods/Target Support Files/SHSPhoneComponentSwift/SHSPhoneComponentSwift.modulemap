@@ -1,0 +1,6 @@
+framework module SHSPhoneComponentSwift {
+  umbrella header "SHSPhoneComponentSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

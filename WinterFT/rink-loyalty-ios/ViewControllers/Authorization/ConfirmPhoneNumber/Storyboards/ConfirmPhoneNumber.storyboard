@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="958-zL-low">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Код-->
+        <scene sceneID="9vf-ws-vs8">
+            <objects>
+                <viewController title="Код" extendedLayoutIncludesOpaqueBars="YES" id="958-zL-low" customClass="ConfirmPhoneNumberViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WyG-sh-BlK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP6-9X-AHZ" userLabel="Top Spacer View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="134.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Код подтверждения" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olC-Ri-uG1" customClass="YoshikoTextField" customModule="rink_loyalty_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="178.5" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="XSe-yy-KxT"/>
+                                </constraints>
+                                <color key="textColor" red="0.090196078430000007" green="0.64705882349999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="onTextFieldDidChanged:" destination="958-zL-low" eventType="editingChanged" id="6vD-3I-ji7"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dV-Ob-fg0" userLabel="Separator View">
+                                <rect key="frame" x="20" y="262.5" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0kI-WL-3az"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы вышлем вам код подтверждения, чтобы убедиться, что это вы." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-JG-cjr">
+                                <rect key="frame" x="20" y="275.5" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UM-ZF-McQ" customClass="PrimaryButton" customModule="rink_loyalty_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="804" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="iOV-NQ-uff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <state key="normal" title="Подвердить"/>
+                                <connections>
+                                    <action selector="onNextButtonTouchUpInside:" destination="958-zL-low" eventType="touchUpInside" id="XTt-av-TpC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hac-8K-Gd9" userLabel="Bottom Spacer View">
+                                <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="HVl-Jb-hjR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1UM-ZF-McQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XgX-JG-cjr" secondAttribute="bottom" constant="22" id="3zq-Xx-yp6"/>
+                            <constraint firstAttribute="trailing" secondItem="hac-8K-Gd9" secondAttribute="trailing" id="6gj-dd-hOU"/>
+                            <constraint firstItem="3dV-Ob-fg0" firstAttribute="trailing" secondItem="olC-Ri-uG1" secondAttribute="trailing" id="DDf-FV-eaQ"/>
+                            <constraint firstItem="f1b-9p-ZXo" firstAttribute="bottom" secondItem="hac-8K-Gd9" secondAttribute="bottom" id="HQu-2C-k24"/>
+                            <constraint firstItem="f1b-9p-ZXo" firstAttribute="trailing" secondItem="XgX-JG-cjr" secondAttribute="trailing" constant="20" id="IfL-EV-1IA"/>
+                            <constraint firstItem="f1b-9p-ZXo" firstAttribute="trailing" secondItem="1UM-ZF-McQ" secondAttribute="trailing" constant="20" id="M9L-ie-0va"/>
+                            <constraint firstItem="olC-Ri-uG1" firstAttribute="leading" secondItem="f1b-9p-ZXo" secondAttribute="leading" constant="20" id="QEx-sP-Ejl"/>
+                            <constraint firstItem="1UM-ZF-McQ" firstAttribute="leading" secondItem="f1b-9p-ZXo" secondAttribute="leading" constant="20" id="QOV-d5-6yn"/>
+                            <constraint firstItem="hac-8K-Gd9" firstAttribute="top" secondItem="1UM-ZF-McQ" secondAttribute="bottom" constant="10" id="S9u-e5-Rwu"/>
+                            <constraint firstItem="XgX-JG-cjr" firstAttribute="top" secondItem="3dV-Ob-fg0" secondAttribute="bottom" constant="12" id="T5Y-2v-5PZ"/>
+                            <constraint firstItem="oP6-9X-AHZ" firstAttribute="height" secondItem="WyG-sh-BlK" secondAttribute="height" multiplier="100:667" priority="250" id="U3w-qe-sfh"/>
+                            <constraint firstItem="f1b-9p-ZXo" firstAttribute="trailing" secondItem="olC-Ri-uG1" secondAttribute="trailing" constant="20" id="Y8x-Cp-EMa"/>
+                            <constraint firstItem="hac-8K-Gd9" firstAttribute="leading" secondItem="WyG-sh-BlK" secondAttribute="leading" id="br9-7f-XDV"/>
+                            <constraint firstItem="XgX-JG-cjr" firstAttribute="leading" secondItem="f1b-9p-ZXo" secondAttribute="leading" constant="20" id="fX2-ee-Uf1"/>
+                            <constraint firstItem="oP6-9X-AHZ" firstAttribute="top" secondItem="f1b-9p-ZXo" secondAttribute="top" id="ftB-Hv-QH5"/>
+                            <constraint firstItem="3dV-Ob-fg0" firstAttribute="leading" secondItem="olC-Ri-uG1" secondAttribute="leading" id="n7H-oS-nRJ"/>
+                            <constraint firstItem="oP6-9X-AHZ" firstAttribute="leading" secondItem="WyG-sh-BlK" secondAttribute="leading" id="oZn-MN-J8D"/>
+                            <constraint firstItem="olC-Ri-uG1" firstAttribute="top" secondItem="oP6-9X-AHZ" secondAttribute="bottom" id="tiH-Ya-4r4"/>
+                            <constraint firstItem="oP6-9X-AHZ" firstAttribute="trailing" secondItem="WyG-sh-BlK" secondAttribute="trailing" id="v6c-74-cTd"/>
+                            <constraint firstItem="3dV-Ob-fg0" firstAttribute="top" secondItem="olC-Ri-uG1" secondAttribute="bottom" constant="4" id="vgq-Xc-DiG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f1b-9p-ZXo"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSpacerViewHeightConstraint" destination="HVl-Jb-hjR" id="1B7-cI-DVI"/>
+                        <outlet property="verificationCodeTextField" destination="olC-Ri-uG1" id="vMa-Cn-QOj"/>
+                        <outlet property="verifyButton" destination="1UM-ZF-McQ" id="Kwd-DA-bc5"/>
+                        <segue destination="Fu2-MQ-TKC" kind="presentation" identifier="ShowRinks" id="3zC-eu-g9R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5e-Tf-fAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="-179"/>
+        </scene>
+        <!--Rinks-->
+        <scene sceneID="jui-BP-dTu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rinks" id="Fu2-MQ-TKC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rne-wr-YVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="-179"/>
+        </scene>
+    </scenes>
+</document>

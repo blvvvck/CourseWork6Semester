@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'rink-loyalty-ios' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for rink-loyalty-ios
+
+  # Analytics
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
+  # Libraries
+  pod 'Alamofire', '~> 4.5'
+  pod 'MagicalRecord'
+  pod 'Charts'
+  pod 'VK-ios-sdk'
+  pod 'SHSPhoneComponentSwift'
+  pod 'Moya', '~> 12.0'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'SwiftLint'
+  pod "SwiftPhoneNumberFormatter"
+
+end

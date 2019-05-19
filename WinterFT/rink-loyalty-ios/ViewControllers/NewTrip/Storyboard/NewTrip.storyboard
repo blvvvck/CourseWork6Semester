@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2R-7y-b4G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Trip View Controller-->
+        <scene sceneID="hBF-HE-iPM">
+            <objects>
+                <viewController storyboardIdentifier="NewTripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2R-7y-b4G" customClass="NewTripViewController" customModule="rink_loyalty_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dXc-as-QWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время катания:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84V-No-Vb6">
+                                <rect key="frame" x="16" y="96" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyl-Ls-hKA">
+                                <rect key="frame" x="24" y="224" width="89" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fzt-Zp-Jxj" appends="YES" id="IpA-pH-mnH"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Калорий:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-vv-xHK">
+                                <rect key="frame" x="24" y="261" width="68.5" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sef-OI-xt3">
+                                <rect key="frame" x="340" y="223" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwu-Ii-19R">
+                                <rect key="frame" x="340" y="260" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp5-rf-jkK">
+                                <rect key="frame" x="16" y="133" width="343" height="58"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="48"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZx-W0-Gwn">
+                                <rect key="frame" x="24" y="207" width="327" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kbo-24-d4h"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rku-5Y-se0">
+                                <rect key="frame" x="16" y="544" width="343" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.30196078430000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o5w-bj-tHy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Финиш">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fs_cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopButtonTouchUpInside:" destination="o2R-7y-b4G" eventType="touchUpInside" id="j7c-Ff-yyP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-k8-XQS">
+                                <rect key="frame" x="16" y="544" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.64705882349999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ri8-Dr-cpD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="На старт!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fs_cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonTouchUpInside:" destination="o2R-7y-b4G" eventType="touchUpInside" id="LMH-x7-Kpi"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk2-kP-ret">
+                                <rect key="frame" x="16" y="610" width="343" height="41"/>
+                                <state key="normal" title="Посмотреть предыдущие катания">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Посмотреть предыдущие катания">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="tripListButtonTouchUpInside:" destination="o2R-7y-b4G" eventType="touchUpInside" id="tqQ-hM-HKi"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для остановки таймера закройте приложение или нажмите на кнопку &quot;финиш&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skh-kR-6En">
+                                <rect key="frame" x="16" y="610" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0sx-vv-xHK" firstAttribute="top" secondItem="gyl-Ls-hKA" secondAttribute="bottom" constant="16" id="0WL-Ju-7sy"/>
+                            <constraint firstItem="Skh-kR-6En" firstAttribute="top" secondItem="Rku-5Y-se0" secondAttribute="bottom" constant="16" id="140-ml-oYc"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="trailing" secondItem="Skh-kR-6En" secondAttribute="trailing" constant="16" id="2p3-NT-OTG"/>
+                            <constraint firstItem="84V-No-Vb6" firstAttribute="leading" secondItem="53S-L0-05O" secondAttribute="leading" constant="16" id="72u-gb-YJ0"/>
+                            <constraint firstItem="84V-No-Vb6" firstAttribute="top" secondItem="53S-L0-05O" secondAttribute="top" constant="32" id="8H5-9w-ZCi"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="trailing" secondItem="tp5-rf-jkK" secondAttribute="trailing" constant="16" id="8br-MI-8B3"/>
+                            <constraint firstItem="Rku-5Y-se0" firstAttribute="leading" secondItem="FcE-k8-XQS" secondAttribute="leading" id="91U-LO-z81"/>
+                            <constraint firstItem="gyl-Ls-hKA" firstAttribute="leading" secondItem="mZx-W0-Gwn" secondAttribute="leading" id="I6v-JV-e8e"/>
+                            <constraint firstItem="Mwu-Ii-19R" firstAttribute="trailing" secondItem="sef-OI-xt3" secondAttribute="trailing" id="JEE-Eo-OrD"/>
+                            <constraint firstItem="hk2-kP-ret" firstAttribute="leading" secondItem="53S-L0-05O" secondAttribute="leading" constant="16" id="JrC-yR-SY7"/>
+                            <constraint firstItem="tp5-rf-jkK" firstAttribute="leading" secondItem="53S-L0-05O" secondAttribute="leading" constant="16" id="K5m-mP-8ig"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="trailing" secondItem="FcE-k8-XQS" secondAttribute="trailing" constant="16" id="M2h-rf-i2O"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="trailing" secondItem="hk2-kP-ret" secondAttribute="trailing" constant="16" id="Mg1-9A-Q5e"/>
+                            <constraint firstItem="Mwu-Ii-19R" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0sx-vv-xHK" secondAttribute="trailing" constant="247.5" id="QGq-pJ-yXP"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="bottom" secondItem="hk2-kP-ret" secondAttribute="bottom" constant="16" id="RK2-1q-96d"/>
+                            <constraint firstItem="gyl-Ls-hKA" firstAttribute="top" secondItem="mZx-W0-Gwn" secondAttribute="bottom" constant="16" id="SMr-2d-SJA"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="bottom" secondItem="Skh-kR-6En" secondAttribute="bottom" constant="16" id="VFc-uX-6JJ"/>
+                            <constraint firstItem="sef-OI-xt3" firstAttribute="trailing" secondItem="mZx-W0-Gwn" secondAttribute="trailing" id="Xpw-ug-BS5"/>
+                            <constraint firstItem="Rku-5Y-se0" firstAttribute="trailing" secondItem="FcE-k8-XQS" secondAttribute="trailing" id="bc0-Xo-1GH"/>
+                            <constraint firstItem="mZx-W0-Gwn" firstAttribute="leading" secondItem="dXc-as-QWJ" secondAttribute="leadingMargin" constant="8" id="byG-Fm-W0v"/>
+                            <constraint firstItem="FcE-k8-XQS" firstAttribute="leading" secondItem="53S-L0-05O" secondAttribute="leading" constant="16" id="gYE-E5-B2W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mZx-W0-Gwn" secondAttribute="trailing" constant="8" id="jwN-d6-Ogi"/>
+                            <constraint firstItem="mZx-W0-Gwn" firstAttribute="top" secondItem="tp5-rf-jkK" secondAttribute="bottom" constant="16" id="k3w-AQ-5fS"/>
+                            <constraint firstItem="53S-L0-05O" firstAttribute="trailing" secondItem="84V-No-Vb6" secondAttribute="trailing" constant="16" id="kPP-o9-j4e"/>
+                            <constraint firstItem="hk2-kP-ret" firstAttribute="top" secondItem="FcE-k8-XQS" secondAttribute="bottom" constant="16" id="m6S-dp-m8K"/>
+                            <constraint firstItem="0sx-vv-xHK" firstAttribute="leading" secondItem="gyl-Ls-hKA" secondAttribute="leading" id="n2m-h4-uhI"/>
+                            <constraint firstItem="Skh-kR-6En" firstAttribute="leading" secondItem="53S-L0-05O" secondAttribute="leading" constant="16" id="nPl-Rw-9cB"/>
+                            <constraint firstItem="hk2-kP-ret" firstAttribute="top" secondItem="Rku-5Y-se0" secondAttribute="bottom" constant="16" id="noZ-SS-Y9M"/>
+                            <constraint firstItem="sef-OI-xt3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gyl-Ls-hKA" secondAttribute="trailing" constant="227" id="rLJ-aV-kCn"/>
+                            <constraint firstItem="Mwu-Ii-19R" firstAttribute="top" secondItem="sef-OI-xt3" secondAttribute="bottom" constant="16" id="tKG-yc-KPJ"/>
+                            <constraint firstItem="tp5-rf-jkK" firstAttribute="top" secondItem="84V-No-Vb6" secondAttribute="bottom" constant="16" id="ttR-2g-sjt"/>
+                            <constraint firstItem="sef-OI-xt3" firstAttribute="top" secondItem="mZx-W0-Gwn" secondAttribute="bottom" constant="15" id="vWJ-c9-sHp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="53S-L0-05O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jK0-US-z8z"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="Mwu-Ii-19R" id="h4a-ok-8H6"/>
+                        <outlet property="caloriesTextLabel" destination="0sx-vv-xHK" id="cln-qf-ijm"/>
+                        <outlet property="congratulationsTextLabel" destination="84V-No-Vb6" id="NML-Fl-sCz"/>
+                        <outlet property="distanceLabel" destination="sef-OI-xt3" id="dwL-Js-Uus"/>
+                        <outlet property="distanceTextLabel" destination="gyl-Ls-hKA" id="8P9-1B-DYk"/>
+                        <outlet property="informationLabel" destination="Skh-kR-6En" id="Gsp-kd-wKv"/>
+                        <outlet property="startButton" destination="FcE-k8-XQS" id="EYZ-lc-XrA"/>
+                        <outlet property="stopButton" destination="Rku-5Y-se0" id="T0J-Ab-bp9"/>
+                        <outlet property="timeLabel" destination="tp5-rf-jkK" id="hra-3A-BcV"/>
+                        <outlet property="tripListButton" destination="hk2-kP-ret" id="8QP-T0-thM"/>
+                        <segue destination="2aZ-fb-XXU" kind="show" identifier="ShowEndTrip" id="WhX-Wx-Ln1"/>
+                        <segue destination="gWG-Kh-NoB" kind="presentation" identifier="ShowLocationRequest" id="JDG-In-d47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9o-lZ-6OT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fzt-Zp-Jxj">
+                    <connections>
+                        <action selector="onDistanceLabelTap:" destination="o2R-7y-b4G" id="35i-Iw-WJa"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4016.8000000000002" y="160.56971514242881"/>
+        </scene>
+        <!--EndTrip-->
+        <scene sceneID="ZAC-ZI-jHp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EndTrip" id="2aZ-fb-XXU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zI-le-2IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4689" y="160"/>
+        </scene>
+        <!--LocationRequest-->
+        <scene sceneID="T1Q-19-0jo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocationRequest" id="gWG-Kh-NoB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJ5-7d-zdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4733" y="260"/>
+        </scene>
+    </scenes>
+</document>
